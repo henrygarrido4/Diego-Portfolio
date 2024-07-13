@@ -3,6 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Cache-Control" content="max-age=86400, public" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
     <title>Henrry Garrido - Portfolio</title>
     <meta
       name="apple-mobile-web-app-status-bar-style"
@@ -10,7 +17,7 @@
     />
     <meta
       name="description"
-      content="Welcome to Henrry Garrido’s Portfolio – Your go-to web developer for stunning, responsive websites. I specialize in HTML5, CSS3, JavaScript, WordPress, and Shopify, crafting custom web solutions tailored to your needs. Explore my latest projects, including sleek e-commerce sites and dynamic web applications, to see how I can elevate your online presence. Contact me today to discuss your next project!"
+      content="Welcome to Henrry Garrido’s Portfolio! I create stunning, responsive websites with HTML5, CSS3, JavaScript, WordPress, and Shopify."
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -28,7 +35,10 @@
       property="og:description"
       content="Welcome to Henrry Garrido’s Portfolio! I create stunning, responsive websites with HTML5, CSS3, JavaScript, WordPress, and Shopify."
     />
-    <meta property="og:image" content="" />
+    <meta
+      property="og:image"
+      content="https://henrrygarrido.com/sharing-img.jpg"
+    />
     <meta property="og:url" content="https://www.henrrygarrido.com" />
     <meta property="og:site_name" content="Henrry Garrido - Portfolio" />
 
@@ -38,9 +48,12 @@
       name="twitter:description"
       content="Welcome to Henrry Garrido’s Portfolio! I create stunning, responsive websites with HTML5, CSS3, JavaScript, WordPress, and Shopify."
     />
-    <meta name="twitter:image" content="URL_to_your_image.jpg" />
-    <meta name="twitter:site" content="@yourtwitterhandle" />
-    <meta name="twitter:creator" content="@yourtwitterhandle" />
+    <meta
+      name="twitter:image"
+      content="https://henrrygarrido.com/sharing-img.jpg"
+    />
+    <meta name="twitter:site" content="@henrry_codes" />
+    <meta name="twitter:creator" content="@henrry_codes" />
 
     <!-- Additional Meta Tags -->
     <link rel="canonical" href="https://www.henrrygarrido.com" />
@@ -123,6 +136,21 @@
       })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
     </script>
 
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-3GH7B5BJZF"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-3GH7B5BJZF");
+    </script>
+
     <!-- CSS here -->
     <link rel="stylesheet" href="assets/css/bootstrap.css" />
     <link rel="stylesheet" href="assets/css/animate.css" />
@@ -130,9 +158,17 @@
     <link rel="stylesheet" href="assets/css/swiper-bundle.css" />
     <link rel="stylesheet" href="assets/css/slick.css" />
     <link rel="stylesheet" href="assets/css/magnific-popup.css" />
-    <!-- <link rel="stylesheet" href="assets/css/font-awesome-pro.css" /> -->
+    <link rel="stylesheet" href="assets/css/font-awesome-pro.css" />
     <link rel="stylesheet" href="assets/css/spacing.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/btn.css" />
+    <style>
+      @media (min-width: 1400px) {
+        .font-size {
+          font-size: 85px;
+        }
+      }
+    </style>
   </head>
 
   <body id="body" class="tp-magic-cursor">
@@ -174,7 +210,7 @@
 
     <!-- back to top start -->
     <div class="back-to-top-wrapper" style="bottom: 100px">
-      <button id="back_to_top" type="button" class="back-to-top-btn">
+      <button id="back_to_top" type="button" class="back-to-top-btn" aria-label="back to top">
         <svg
           width="12"
           height="7"
@@ -200,7 +236,7 @@
         <img
           class="tp-offcanvas-shape-2"
           src="assets/img/offcanvas/bg-shape-3.png"
-          alt=""
+          alt="off canvas round shape"
         />
       </div>
       <div class="tp-offcanvas-circle-1">
@@ -214,21 +250,21 @@
           class="tp-offcanvas-top-2 d-flex align-items-center justify-content-between"
         >
           <div class="tp-offcanvas-logo-2">
-            <a href="#">
+            <a href="index.html" aria-label="refresh index">
               <img
                 class="logo-white"
                 src="assets/img/logo/logo-white-hg.png"
-                alt=""
+                alt="white logo"
               />
               <img
                 class="logo-black"
                 src="assets/img/logo/logo-black-hg.png"
-                alt=""
+                alt="black logo"
               />
             </a>
           </div>
           <div class="tp-offcanvas-close-2">
-            <button class="tp-offcanvas-close-btn-2 tp-offcanvas-open-btn-2">
+            <button class="tp-offcanvas-close-btn-2 tp-offcanvas-open-btn-2" aria-label="open side menu">
               <svg
                 width="37"
                 height="38"
@@ -269,35 +305,35 @@
             <div class="row gx-2">
               <div class="col-md-3 col-3">
                 <div class="tp-offcanvas-gallery-img fix">
-                  <a href="#"
+                  <a href="#" aria-label="off canva image"
                     ><img
                       src="assets/img/offcanvas/lenovo-off-canvas.jpg"
-                      alt=""
+                      alt="laptop"
                   /></a>
                 </div>
               </div>
               <div class="col-md-3 col-3">
                 <div class="tp-offcanvas-gallery-img fix">
-                  <a href="#"
+                  <a href="#" aria-label="off canva image"
                     ><img
                       src="assets/img/offcanvas/titan-off-canvas.jpg"
-                      alt=""
+                      alt="titan seat"
                   /></a>
                 </div>
               </div>
               <div class="col-md-3 col-3">
                 <div class="tp-offcanvas-gallery-img fix">
-                  <a href="#"
-                    ><img src="assets/img/offcanvas/desk-off-canvas.jpg" alt=""
+                  <a href="#" aria-label="off canva image"
+                    ><img src="assets/img/offcanvas/desk-off-canvas.jpg" alt="desk setup"
                   /></a>
                 </div>
               </div>
               <div class="col-md-3 col-3">
                 <div class="tp-offcanvas-gallery-img fix">
-                  <a href="#"
+                  <a href="#" aria-label="off canva image"
                     ><img
                       src="assets/img/offcanvas/reading-off-canvas.jpg"
-                      alt=""
+                      alt="reading picture"
                   /></a>
                 </div>
               </div>
@@ -307,20 +343,23 @@
             <h3 class="tp-offcanvas-contact-title-2">Information</h3>
 
             <ul>
-              <li><a href="tel:+8329864695">(832) 986-4695</a></li>
+              <li><a href="tel:+8329864695" aria-label="call number">(832)986-4695</a></li>
               <li>
-                <a href="mailto:henrygarrido4@gmail.com"
+                <a href="mailto:henrygarrido4@gmail.com" aria-label="email"
                   >henrygarrido4@gmail.com</a
                 >
               </li>
-              <li><a href="Resume.pdf">Download CV</a></li>
+              <li><a target="_blank" href="Resume-2024.pdf">Download CV</a></li>
             </ul>
           </div>
           <div class="tp-offcanvas-social-2">
             <h3 class="tp-offcanvas-contact-title-2">Follow Me</h3>
             <ul>
               <li>
-                <a href="#">
+                <a
+                  href="https://www.instagram.com/henrry_codes/"
+                  target="_blank"
+                >
                   <svg
                     width="16"
                     height="16"
@@ -353,7 +392,7 @@
                 </a>
               </li>
               <li>
-                <a
+                <a aria-label="visit Twitter"
                   target="_blank"
                   class="twitter"
                   href="https://x.com/henrry_codes"
@@ -410,18 +449,18 @@
             <div class="row align-items-center">
               <div class="col-xl-2 col-lg-2 col-md-5 col-6">
                 <div class="logo">
-                  <a class="logo-white" href="index-light.html">
+                  <a class="logo-white" href="index.html">
                     <img
                       data-width="115"
                       src="assets/img/logo/logo-white-hg.png"
-                      alt=""
+                      alt="white logo"
                     />
                   </a>
-                  <a class="logo-black" href="index-light.html">
+                  <a class="logo-black" href="index.html">
                     <img
                       data-width="115"
                       src="assets/img/logo/logo-black-hg.png"
-                      alt=""
+                      alt="black logo"
                     />
                   </a>
                 </div>
@@ -431,7 +470,7 @@
                   <nav class="tp-main-menu-content">
                     <ul>
                       <li class="p-static">
-                        <a href="index-light.html">Home</a>
+                        <a href="index.html">Home</a>
                       </li>
                       <li><a href="#skills">Skills</a></li>
                       <li>
@@ -547,10 +586,10 @@
                     </label>
                   </div>
                   <div class="tp-header-cv ml-10 d-none d-md-block">
-                    <a
+                    <a aria-label="download Resume"
                       class="tp-header-cv-btn"
                       target="_blank"
-                      href="assets/img/cv/Resume.pdf"
+                      href="Resume-2024.pdf"
                     >
                       <svg
                         width="16"
@@ -579,6 +618,7 @@
                     <button
                       class="tp-hamburger-btn tp-hamburger-btn-white tp-menu-bar tp-offcanvas-open-btn-2"
                       type="button"
+                      aria-label="hamburger button"
                     >
                       <span></span>
                     </button>
@@ -602,18 +642,18 @@
             <div class="row align-items-center">
               <div class="col-xl-2 col-lg-2 col-md-5 col-6">
                 <div class="logo">
-                  <a class="logo-white" href="index-light.html">
+                  <a class="logo-white" href="index.html">
                     <img
                       data-width="115"
                       src="assets/img/logo/logo-white-hg.png"
-                      alt=""
+                      alt="white logo"
                     />
                   </a>
-                  <a class="logo-black" href="index-light.html">
+                  <a class="logo-black" href="index.html">
                     <img
                       data-width="115"
                       src="assets/img/logo/logo-black-hg.png"
-                      alt=""
+                      alt="black logo"
                     />
                   </a>
                 </div>
@@ -623,7 +663,7 @@
                   <nav class="tp-main-menu-content">
                     <ul>
                       <li class="p-static">
-                        <a href="index-light.html">Home</a>
+                        <a href="index.html">Home</a>
                       </li>
                       <li><a href="#skills">Skills</a></li>
                       <li>
@@ -742,7 +782,7 @@
                     <a
                       class="tp-header-cv-btn"
                       target="_blank"
-                      href="assets/img/cv/Resume.pdf"
+                      href="Resume-2024.pdf"
                     >
                       <svg
                         width="16"
@@ -771,6 +811,7 @@
                     <button
                       class="tp-hamburger-btn tp-hamburger-btn-white tp-menu-bar tp-offcanvas-open-btn-2"
                       type="button"
+                      aria-label="hamburger menu"
                     >
                       <span></span>
                     </button>
@@ -800,7 +841,7 @@
             <div class="tp-hero-social-wrapper">
               <span class="tp-hero-social-bar"></span>
               <div class="tp-hero-social">
-                <a
+                <a aria-label="visit linkedin"
                   target="_blank"
                   class="linkedin"
                   href="https://www.linkedin.com/in/henrry-garrido-82181b186/"
@@ -818,7 +859,10 @@
                     />
                   </svg>
                 </a>
-                <a href="#">
+                <a aria-label="visit insta"
+                  target="_blank"
+                  href="https://www.instagram.com/henrry_codes/"
+                >
                   <svg
                     width="16"
                     height="16"
@@ -883,12 +927,12 @@
             </div>
             <div class="tp-hero-bottom-text-wrapper">
               <div class="tp-hero-bottom-text">
-                <p>Web Developer</p>
-                <p>Content Editor</p>
+                <p>Responsive Design</p>
+                <p>Detail Oriented</p>
               </div>
               <div class="tp-hero-bottom-text">
-                <p>Web Editor</p>
-                <p>Content Editor</p>
+                <p>Responsive Design</p>
+                <p>Detail Oriented</p>
               </div>
             </div>
             <div class="container">
@@ -900,16 +944,18 @@
                     >
                       <span
                         >Hey There!
-                        <img src="assets/img/hero/hero-hand.png" alt=""
+                        <img src="assets/img/hero/hero-hand.png" alt="hand shape"
                       /></span>
                       <h3 class="tp-hero-title cd-headline clip tp_title_anim">
-                        I am Henrry <br />
+                        I am Henrry a <br />
                         <span class="cd-words-wrapper">
-                          <b class="is-visible">Web</b>
+                          <b class="is-visible">Web Developer</b>
 
-                          <b>UX</b>
+                          <b>Email Developer</b>
+                          <b>Shopify Developer</b>
+                          <b class="font-size">WordPress Developer</b>
                         </span>
-                        developer
+                        
                       </h3>
 
                       <p>
@@ -918,49 +964,22 @@
                         I create impactful and engaging online experiences.
                       </p>
 
-                      <div class="tp-hero-btn wrap">
-                        <div class="tp-hover-btn-wrapper tp-btn-bounce">
-                          <a
-                            href="#projects"
-                            class="tp-hover-btn tp-hover-btn-item tp-btn-circle square"
-                          >
-                            <span class="tp-btn-circle-text">
-                              View <br />
-                              My Work
-                            </span>
-                            <span class="tp-btn-circle-arrow">
-                              <svg
-                                width="12"
-                                height="12"
-                                viewBox="0 0 12 12"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
+                      <div>
+                        <div style="max-width: 325px">
+                          <a href="#projects">
+                            <button class="btn has_before" aria-label="explore my work">
+                              <span class="span" style="color: white"
+                                >Explore My Work</span
                               >
-                                <path
-                                  d="M11 1L1 11"
-                                  stroke="currentColor"
-                                  stroke-width="1.5"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                />
-                                <path
-                                  d="M2.98874 1.01725L10.9991 1L10.9826 9.01105"
-                                  stroke="currentColor"
-                                  stroke-width="1.5"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                />
-                              </svg>
-                            </span>
-                            <i class="tp-btn-circle-dot"></i>
+
+                              <ion-icon
+                                style="color: white"
+                                name="arrow-forward"
+                                aria-hidden="true"
+                              ></ion-icon>
+                            </button>
                           </a>
                         </div>
-                      </div>
-                      <div class="tp-hero-scroll smooth">
-                        <a href=".tp-sv">
-                          <span class="tp-hero-scroll-bar"></span>
-                          <span class="tp-hero-scroll-mouse"></span>
-                        </a>
                       </div>
                     </div>
                   </div>
@@ -970,24 +989,12 @@
                     class="tp-hero-thumb-wrapper text-center text-lg-end p-relative z-index-1"
                   >
                     <div class="tp-hero-thumb-shape">
-                      <img
-                        class="tp-hero-thumb-shape-1"
-                        data-speed="1.4"
-                        src="assets/img/hero/shape/hero-shape-5.png"
-                        alt=""
-                      />
-                      <img
-                        class="tp-hero-thumb-shape-2 d-none d-xl-block"
-                        data-speed="1.2"
-                        src="assets/img/hero/shape/hero-shape-8.png"
-                        alt=""
-                      />
                       <span class="tp-hero-thumb-shape-3"></span>
                     </div>
                     <div class="tp-hero-thumb">
                       <img
                         src="assets/img/hero/KASM-86_new_portfolio.png"
-                        alt=""
+                        alt="developer picture"
                       />
                     </div>
                   </div>
@@ -1060,6 +1067,7 @@
                         role="tablist"
                       >
                         <button
+                        aria-label="tech button"
                           class="nav-link"
                           id="nav-tech-tab"
                           data-bs-toggle="tab"
@@ -1072,6 +1080,7 @@
                           Tech
                         </button>
                         <button
+                        aria-label="design button"
                           class="nav-link active"
                           id="nav-design-tab"
                           data-bs-toggle="tab"
@@ -1110,7 +1119,7 @@
                                   <span>
                                     <img
                                       src="assets/img/skill/SHOPIFY_LOGO.png"
-                                      alt=""
+                                      alt="shopify logo"
                                     />
                                   </span>
                                 </div>
@@ -1127,7 +1136,7 @@
                               >
                                 <div class="tp-skill-icon">
                                   <span>
-                                    <img src="assets/img/skill/wp.png" alt="" />
+                                    <img src="assets/img/skill/wp.png" alt="wordpress logo" />
                                   </span>
                                 </div>
                               </div>
@@ -1144,14 +1153,14 @@
                                 <div class="tp-skill-icon">
                                   <span>
                                     <img
-                                      src="assets/img/skill/nodejs.png"
-                                      alt=""
+                                      src="assets/img/skill/klaviyo-round.png"
+                                      alt="klaviyo logo"
                                     />
                                   </span>
                                 </div>
                               </div>
                               <div class="tp-skill-content">
-                                <h3 class="tp-skill-title">Node js</h3>
+                                <h3 class="tp-skill-title">Klaviyo</h3>
                               </div>
                             </div>
                           </div>
@@ -1163,14 +1172,14 @@
                                 <div class="tp-skill-icon">
                                   <span>
                                     <img
-                                      src="assets/img/skill/VITE_LOGO.png"
-                                      alt=""
+                                      src="assets/img/skill/hd-mjml.png"
+                                      alt="mjml logo"
                                     />
                                   </span>
                                 </div>
                               </div>
                               <div class="tp-skill-content">
-                                <h3 class="tp-skill-title">Vite</h3>
+                                <h3 class="tp-skill-title">MJML</h3>
                               </div>
                             </div>
                           </div>
@@ -1183,7 +1192,7 @@
                                   <span>
                                     <img
                                       src="assets/img/skill/html.png"
-                                      alt=""
+                                      alt="html5 logo"
                                     />
                                   </span>
                                 </div>
@@ -1201,8 +1210,8 @@
                                 <div class="tp-skill-icon">
                                   <span>
                                     <img
-                                      src="assets/img/skill/CSS3.png"
-                                      alt=""
+                                      src="assets/img/skill/css-bg.png"
+                                      alt="css3 logo"
                                     />
                                   </span>
                                 </div>
@@ -1233,7 +1242,7 @@
                                   <span>
                                     <img
                                       src="assets/img/skill/figma.png"
-                                      alt=""
+                                      alt="figma logo"
                                     />
                                   </span>
                                 </div>
@@ -1252,7 +1261,7 @@
                                   <span>
                                     <img
                                       src="assets/img/skill/canva.png"
-                                      alt=""
+                                      alt="canva logo"
                                     />
                                   </span>
                                 </div>
@@ -1271,7 +1280,7 @@
                                   <span>
                                     <img
                                       src="assets/img/skill/photoshop.png"
-                                      alt=""
+                                      alt="photoshop logo"
                                     />
                                   </span>
                                 </div>
@@ -1288,7 +1297,7 @@
                               >
                                 <div class="tp-skill-icon">
                                   <span>
-                                    <img src="assets/img/skill/xd.png" alt="" />
+                                    <img src="assets/img/skill/xd.png" alt="adobexd logo" />
                                   </span>
                                 </div>
                               </div>
@@ -1304,7 +1313,7 @@
                               >
                                 <div class="tp-skill-icon">
                                   <span>
-                                    <img src="assets/img/skill/ai.png" alt="" />
+                                    <img src="assets/img/skill/ai.png" alt="ai logo" />
                                   </span>
                                 </div>
                               </div>
@@ -1320,7 +1329,7 @@
                               >
                                 <div class="tp-skill-icon">
                                   <span>
-                                    <img src="assets/img/skill/in.png" alt="" />
+                                    <img src="assets/img/skill/in.png" alt="invision logo" />
                                   </span>
                                 </div>
                               </div>
@@ -1360,7 +1369,7 @@
                             class="tp-about-thumb-bg-shape include-bg"
                             data-background="assets/img/about/shape/about-shape-1.png"
                           ></div>
-                          <img src="assets/img/about/JARDINES.jpg" alt="" />
+                          <img src="assets/img/about/JARDINES.jpg" alt="about me picture" />
                         </div>
                       </div>
                     </div>
@@ -1369,12 +1378,9 @@
                     <div class="tp-about-desc">
                       <div class="tp-about-desc-content mb-40">
                         <p>
-                          Hello! I’m <span>Henrry Garrido </span>a
-                          <span> Web Content Manager &amp; Developer </span
-                          >focused on creating
-                          <span>engaging content and impactful websites</span>.
-                          I cherish time with my son and staying active, which
-                          fuels my creativity and drive in web development.
+                         <span>Hello! I'm Henrry Garrido, a Web Developer and Email Marketing Specialist focused on creating
+                         engaging content and impactful websites.<br/> In addition to my professional work, spending quality time 
+                         with my son and maintaining an active lifestyle enhance my creativity and passion for web development.</span> 
                         </p>
                         <a class="tp-hero-2__exp-link" href="#projects">
                           MY PORTFOLIO
@@ -1411,7 +1417,7 @@
           <!-- about area end -->
 
           <!-- portfolio area start -->
-          <section
+          <section style="padding-top: 80px"
             id="projects"
             class="tp-portfolio-area tp-btn-trigger-2 p-relative z-index-1 pt-280 pb-40 fix"
           >
@@ -1442,7 +1448,7 @@
                     <div class="tp-portfolio-item-wrapper">
                       <!-- portfolio item -->
                       <div class="tp-portfolio-item mb-70">
-                        <a href="portfolio-details.html">
+                        <a target="_blank" href="https://exclusivecutz.com/">
                           <div class="tp-portfolio-thumb img-1 w-img fix">
                             <div
                               class="tp-portfolio-thumb-img include-bg d-none"
@@ -1452,7 +1458,7 @@
                               <img
                                 data-speed="0.85"
                                 src="assets/img/portfolio/johnnys_barbershop.jpg"
-                                alt=""
+                                alt="johnny's barbershop"
                               />
                             </div>
                           </div>
@@ -1504,22 +1510,25 @@
 
                       <!-- portfolio item -->
                       <div class="tp-portfolio-item mb-70">
-                        <a href="https://shopify-email-template.netlify.app/">
+                        <a
+                          target="_blank"
+                          href="https://express-promotion.netlify.app/"
+                        >
                           <div class="tp-portfolio-thumb img-1 w-img fix">
                             <div
                               class="tp-portfolio-thumb-img include-bg d-none"
-                              data-background="assets/img/portfolio/Shopify-email.jpg"
+                              data-background="assets/img/portfolio/express-promotion.jpg"
                             ></div>
                             <div class="tp-portfolio-thumb-img">
                               <img
                                 data-speed="0.85"
-                                src="assets/img/portfolio/Shopify-email.jpg"
-                                alt=""
+                                src="assets/img/portfolio/express-promotion.jpg"
+                                alt="express promotion"
                               />
                             </div>
                           </div>
                           <div class="tp-portfolio-content">
-                            <h3 class="tp-portfolio-title">Shopify Email</h3>
+                            <h3 class="tp-portfolio-title">Promotion Email</h3>
 
                             <div
                               class="tp-portfolio-meta d-flex align-items-center"
@@ -1552,7 +1561,72 @@
                               </span>
 
                               <div class="tp-portfolio-meta-hover">
-                                <span>HTML5, CSS3</span>
+                                <span>MJML, HTML5, CSS3 </span>
+                                <span class="tp-portfolio-meta-link"
+                                  >View Project</span
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+
+                      <!-- portfolio item -->
+                      <div class="tp-portfolio-item mb-70">
+                        <a
+                          target="_blank"
+                          href="https://transactional-email-on.netlify.app/"
+                        >
+                          <div class="tp-portfolio-thumb img-1 w-img fix">
+                            <div
+                              class="tp-portfolio-thumb-img include-bg d-none"
+                              data-background="assets/img/portfolio/on-optimized.jpg"
+                            ></div>
+                            <div class="tp-portfolio-thumb-img">
+                              <img
+                                data-speed="0.85"
+                                src="assets/img/portfolio/on-optimized.jpg"
+                                alt="onnit transactional picture"
+                              />
+                            </div>
+                          </div>
+                          <div class="tp-portfolio-content">
+                            <h3 class="tp-portfolio-title">
+                              Transactional Email
+                            </h3>
+
+                            <div
+                              class="tp-portfolio-meta d-flex align-items-center"
+                            >
+                              <span class="tp-portfolio-meta-count">06</span>
+
+                              <span class="tp-portfolio-meta-arrow">
+                                <svg
+                                  width="42"
+                                  height="13"
+                                  viewBox="0 0 42 13"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M35.4889 1L41 6.33338L35.4889 11.6667"
+                                    stroke="currentColor"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  />
+                                  <path
+                                    d="M0.999998 6.33179H41"
+                                    stroke="currentColor"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  />
+                                </svg>
+                              </span>
+
+                              <div class="tp-portfolio-meta-hover">
+                                <span>MJML, HTML5, CSS3 </span>
                                 <span class="tp-portfolio-meta-link"
                                   >View Project</span
                                 >
@@ -1568,7 +1642,7 @@
                   <div class="tp-portfolio-item-wrapper pl-50">
                     <!-- portfolio item -->
                     <div class="tp-portfolio-item mb-70">
-                      <a href="portfolio-details.html">
+                      <a target="_blank" href="https://sandrascreations.store/">
                         <div class="tp-portfolio-thumb img-2 w-img fix">
                           <div
                             class="tp-portfolio-thumb-img include-bg d-none"
@@ -1579,7 +1653,7 @@
                             <img
                               data-speed="0.85"
                               src="assets/img/portfolio/sandras_ecommerce.jpg"
-                              alt=""
+                              alt="sandras e-commerce"
                             />
                           </div>
                         </div>
@@ -1628,7 +1702,10 @@
 
                     <!-- portfolio item -->
                     <div class="tp-portfolio-item mb-70">
-                      <a href="portfolio-details.html">
+                      <a
+                        target="_blank"
+                        href="https://henrrywebsolutions.myshopify.com/"
+                      >
                         <div class="tp-portfolio-thumb img-3 w-img fix">
                           <div
                             class="tp-portfolio-thumb-img include-bg d-none"
@@ -1638,13 +1715,13 @@
                             <img
                               data-speed="0.85"
                               src="assets/img/portfolio/one0one_website.jpg"
-                              alt=""
+                              alt="shopify website"
                             />
                           </div>
                         </div>
                         <div class="tp-portfolio-content">
                           <h3 class="tp-portfolio-title">
-                            Demo. Password: Password456
+                            Shopify demo. Password: password
                           </h3>
                           <!-- meta -->
                           <div
@@ -1685,6 +1762,67 @@
                         </div>
                       </a>
                     </div>
+
+                    <!-- portfolio item -->
+                    <div class="tp-portfolio-item mb-70">
+                      <a
+                        target="_blank"
+                        href="https://newsletterw.netlify.app/"
+                      >
+                        <div class="tp-portfolio-thumb img-3 w-img fix">
+                          <div
+                            class="tp-portfolio-thumb-img include-bg d-none"
+                            data-background="assets/img/portfolio/walmart-newsletter.jpg"
+                          ></div>
+                          <div class="tp-portfolio-thumb-img">
+                            <img
+                              data-speed="0.85"
+                              src="assets/img/portfolio/walmart-newsletter.jpg"
+                              alt="walmart newsletter"
+                            />
+                          </div>
+                        </div>
+                        <div class="tp-portfolio-content">
+                          <h3 class="tp-portfolio-title">Newsletter Email</h3>
+                          <!-- meta -->
+                          <div
+                            class="tp-portfolio-meta d-flex align-items-center"
+                          >
+                            <span class="tp-portfolio-meta-count">05</span>
+                            <span class="tp-portfolio-meta-arrow">
+                              <svg
+                                width="42"
+                                height="13"
+                                viewBox="0 0 42 13"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M35.4889 1L41 6.33338L35.4889 11.6667"
+                                  stroke="currentColor"
+                                  stroke-width="1.5"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M0.999998 6.33179H41"
+                                  stroke="currentColor"
+                                  stroke-width="1.5"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </svg>
+                            </span>
+                            <div class="tp-portfolio-meta-hover">
+                              <span>MJML, HTML5, CSS3</span>
+                              <span class="tp-portfolio-meta-link"
+                                >View Project</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1714,8 +1852,8 @@
                   <div class="col-xl-12">
                     <div class="tp-footer-content text-center">
                       <h3 class="tp-footer-title big tp_title_anim">
-                        Let's talk about <br />
-                        the next big thing
+                        Your Go-To <br />
+                        Content Manager
                       </h3>
                     </div>
                   </div>
@@ -1726,7 +1864,7 @@
                       <div class="tp-footer-btn text-center">
                         <a
                           class="tp-btn-green w-100"
-                          href="mailto:WriteaMessage"
+                          href="mailto:henrygarrido4@gmail.com"
                         >
                           <div>
                             <span>Email Me</span>
@@ -1736,7 +1874,11 @@
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6">
                       <div class="tp-footer-btn text-center">
-                        <a class="tp-btn-white-xl w-100" href="contact.html">
+                        <a aria-label="Visit Linkedin"
+                          class="tp-btn-white-xl w-100"
+                          target="_blank"
+                          href="https://www.linkedin.com/in/henrry-garrido-82181b186/"
+                        >
                           <div>
                             <span>linkedin</span>
                           </div>
@@ -1747,7 +1889,7 @@
                 </div>
                 <div class="row gx-50">
                   <div class="col-xl-6 col-lg-4 col-md-6 mb-30">
-                    <a href="#">
+                    <a target="_blank" href="https://x.com/henrry_codes">
                       <div
                         class="tp-footer-social-item d-flex align-items-center justify-content-between"
                       >
@@ -1777,7 +1919,10 @@
                     </a>
                   </div>
                   <div class="col-xl-6 col-lg-4 col-md-6 mb-30">
-                    <a href="#">
+                    <a aria-label="visit insta"
+                      target="_blank"
+                      href="https://www.instagram.com/henrry_codes/"
+                    >
                       <div
                         class="tp-footer-social-item d-flex align-items-center justify-content-between"
                       >
@@ -1836,7 +1981,8 @@
                       class="tp-copyright-content-left text-center text-md-start"
                     >
                       <p>
-                        ©2024 Diego, All Rights Reserved • <span>Credits</span>
+                        ©2024 Henrry Garrido, All Rights Reserved •
+                        <span>Credits</span>
                       </p>
                     </div>
                   </div>
@@ -1859,11 +2005,11 @@
     <!-- JS here -->
     <script src="assets/js/vendor/jquery.js"></script>
     <script src="assets/js/bootstrap-bundle.js"></script>
-    <!-- <script src="assets/js/three.js"></script> -->
+    <script src="assets/js/three.js"></script>
     <script src="assets/js/gsap.js"></script>
     <script src="assets/js/gsap-scroll-smoother.js"></script>
     <script src="assets/js/gsap-scroll-trigger.js"></script>
-    <script src="assets/js/gsap-scroll-to-plugin.js"></script>
+    <!-- <script src="assets/js/gsap-scroll-to-plugin.js"></script> -->
     <script src="assets/js/gsap-split-text.js"></script>
     <script src="assets/js/webgl.js"></script>
 
@@ -1920,34 +2066,14 @@
         });
       });
     </script>
-    <script>
-      function debounce(func, wait) {
-        let timeout;
-        return function (...args) {
-          const context = this;
-          clearTimeout(timeout);
-          timeout = setTimeout(() => func.apply(context, args), wait);
-        };
-      }
-
-      function throttle(func, limit) {
-        let inThrottle;
-        return function (...args) {
-          const context = this;
-          if (!inThrottle) {
-            func.apply(context, args);
-            inThrottle = true;
-            setTimeout(() => (inThrottle = false), limit);
-          }
-        };
-      }
-
-      window.addEventListener(
-        "scroll",
-        throttle(() => {
-          console.log("Throttled Scroll Event");
-        }, 100)
-      );
-    </script>
+    <!-- ION ICON  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
